@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Management System</title>
+
+<style>
+   
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    nav {
+        background-color: #333;
+        color: #fff;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    nav a {
+        color: #fff;
+        text-decoration: none;
+        margin-right: 10px;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    th {
+        background-color: #f2f2f2;
+    }
+    .btn {
+        padding: 8px 16px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    .btn:hover {
+        background-color: #555;
+    }
+</style>
+</head>
+<body>
+<nav>
+    <div>
+        <a href="#">Admin</a>
+        <a href="Addbook.html">Add Books</a> 
+    </div>
+    <div>
+        <a href="#">Logout</a>
+    </div>
+</nav>
+
+<div class="container">
+    <h2>Books List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>S.No</th>
+                <th>Book Picture</th>
+                <th>Book Name</th>
+                <th>Author</th>
+                <th>Price</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Sample row, you'll need to dynamically generate rows for each book -->
+            <tr>
+                <td>1</td>
+                <td><!-- Book Picture --></td>
+                <td>Book Name</td>
+                <td>Author</td>
+                <td>$19.99</td>
+                <td><button class="btn">Edit</button></td>
+                <td><button class="btn">Delete</button></td>
+            </tr>
+            <!-- Additional rows will be dynamically generated here -->
+        </tbody>
+    </table>
+</div>
+
+<!-- Additional HTML or JavaScript code can be added here -->
+
+</body>
+</html>

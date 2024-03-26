@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Add New Book</title>
+<!-- CSS styles can be added here -->
+<style>
+    /* Basic CSS styles for layout and design */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 600px;
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+    }
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+    input[type="text"], input[type="file"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    input[type="submit"]:hover {
+        background-color: #555;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Add New Book</h2>
+    <form action="/add_book" method="post" enctype="multipart/form-data">
+        <label for="serial_number">S.No.:</label>
+        <input type="text" id="serial_number" name="serial_number" placeholder="Enter serial number" required><br>
+
+        <label for="book_picture">Book Picture:</label>
+        <input type="file" id="book_picture" name="book_picture" accept="image/*" required><br>
+
+        <label for="title">Book Name:</label>
+        <input type="text" id="title" name="title" placeholder="Enter book name" required><br>
+
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" placeholder="Enter author" required><br>
+
+        <label for="price">Price:</label>
+        <input type="text" id="price" name="price" placeholder="Enter price" required><br>
+
+        <input type="submit" value="Add Book">
+    </form>
+</div>
+
+</body>
+</html>
