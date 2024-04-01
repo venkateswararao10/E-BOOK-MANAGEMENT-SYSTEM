@@ -1,5 +1,17 @@
 // pages/booklist.js
-'use client'
+import React from 'react'
+
+function page() {
+  return (
+    <div>
+      
+    </div>
+  )
+}
+
+export default page
+
+/*'use client'
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { book_users } from '@/lib/data/book-user';
@@ -47,4 +59,4 @@ const BookList = ({params}) => {
   );
 };
 
-export default BookList;
+export default BookList;*/

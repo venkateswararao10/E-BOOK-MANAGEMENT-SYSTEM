@@ -182,6 +182,14 @@ export const book_users = [
         "BookName": "A Brief History of Time",
         "Author": "Stephen",
         "Price": "₹1000"
+      },
+      {
+        "SNo": "6",
+        "BookPicture": "book6.jpg",
+        "BookName": "The Lord of the Rings",
+        "Author": "J.R.R. Tolkien",
+        "Price": "₹1200",
+        "Action": "Buy Now"
       }
     ]
   },
@@ -193,6 +201,14 @@ export const book_users = [
         "BookName": "A Brief History of Time",
         "Author": "Stephen",
         "Price": "₹1000"
+      },
+      {
+        "SNo": "6",
+        "BookPicture": "book6.jpg",
+        "BookName": "The Lord of the Rings",
+        "Author": "J.R.R. Tolkien",
+        "Price": "₹1200",
+        "Action": "Buy Now"
       }
     ]
   },
@@ -204,6 +220,14 @@ export const book_users = [
         "BookName": "A Brief History of Time",
         "Author": "Stephen",
         "Price": "₹1000"
+      },
+      {
+        "SNo": "6",
+        "BookPicture": "book6.jpg",
+        "BookName": "The Lord of the Rings",
+        "Author": "J.R.R. Tolkien",
+        "Price": "₹1200",
+        "Action": "Buy Now"
       }
     ]
   },

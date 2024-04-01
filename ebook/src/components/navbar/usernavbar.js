@@ -6,14 +6,14 @@ export default function  UserNavbar(props){
    console.log(username.username);
    //{}
  return(
-   <nav>
+   <nav className="bg-slate-200">
     <div className="relative flex  justify-center items-center">
       
-       <Link href={`/users/${username.username}/`} className="text-3xl p-5 m-5">home</Link>
-       <Link href={`/users/${username.username}/listofbooks`} className="text-3xl p-5 m-5">BookLists</Link>
+       <Link href={`/users/${username.username}/`} className="text-3xl px-5 mx-5 py-4 my-3">Home</Link>
+       <Link href={`/users/${username.username}/listofbooks`} className="text-3xl px-5 mx-5 py-4 my-3">BookLists</Link>
        
 
-       <Link href="/" className="text-3xl p-5 m-5">logout</Link>
+       <Link href="/" className="text-3xl px-5 mx-5 py-4 my-3">Logout</Link>
        
      </div>  
     

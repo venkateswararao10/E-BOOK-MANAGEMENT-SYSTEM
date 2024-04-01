@@ -1,5 +1,5 @@
 'use client'
-import RegisterFormData from "@/lib/registeraction";
+
 /*import { useState,useEffect } from "react";
 import { useRouter } from "next/navigation";
 export default function register(){
@@ -174,11 +174,11 @@ export default function Register() {
 
 
 import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { useRouter,permanentRedirect } from "next/navigation";
 import Navbar from "@/components/navbar/navbar";
 
 export default function Register() {
-  const router = useRouter();
+  
   const [redirect, setRedirect] = useState(false);
   const [formData, setFormData] = useState({
     username: "",
@@ -213,7 +213,7 @@ export default function Register() {
 
   useEffect(() => {
     if (redirect) {
-      router.push("/login");
+      permanentRedirect("/login");
     }
   }, [redirect]);
 

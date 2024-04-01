@@ -2,7 +2,7 @@
 
 'use client'
 import Link from "next/link";
-import Signout from "../signout";
+
 import { permanentRedirect } from 'next/navigation'
 
 import { useState, useEffect } from "react";
@@ -36,7 +36,7 @@ export default function AdminNavbar() {
   
   return (
   <>
-    <nav className="backdrop-blur-sm bg-white/30">
+    <nav className=" bg-white/30">
       <div className="relative flex justify-center items-center">
         {/*<Link href="/admin" className="text-3xl p-5 m-5 transform hover:scale-110 transition-transform duration-300">Home
         </Link>*/}

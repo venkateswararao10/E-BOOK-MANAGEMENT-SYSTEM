@@ -53,6 +53,7 @@ import { account } from "@/lib/data/data";
 // components/PaymentCard.js
 
 import { useState } from 'react';
+import Image from 'next/image';
 
 export default function PaymentCard({params})  {
     const router=useRouter();
@@ -118,10 +119,10 @@ export default function PaymentCard({params})  {
 
   return (
     <div className=''>
-    <div className="bg-white rounded-lg shadow-md p-6 w-100">
+    <div className="bg-white rounded-lg shadow-md p-20 w-100">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-xl font-semibold">Payment Card</h2>
-        <img src="https://source.unsplash.com/600x400/?mastercard" alt="Credit Card Icon" className="w-15 h-12" />
+        <Image src="https://source.unsplash.com/600x400/?mastercard" alt="Credit Card Icon" className="w-15 h-12" />
       </div>
       <div className="text-gray-700 mb-4 -4">
         <input
@@ -150,8 +151,8 @@ export default function PaymentCard({params})  {
           value={expiryDate}
           onChange={handleInputChange}
           placeholder="Expiry Date"
-          required
           className="input-field mb-4"
+          required
         />
       </div>
       <button className="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600" onClick={handlePayment}>
